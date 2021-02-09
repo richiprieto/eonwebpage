@@ -1,0 +1,128 @@
+#style-switcher h2 a { background: #03a9f4 none repeat scroll 0 0 }
+.status-mes {
+
+    border-left: 3px solid #03a9f4;
+
+}
+/*START SCROLL TO TOP*/
+.topcontrol {background: #03a9f4 none repeat scroll 0 0;}
+/*END SCROLL TO TOP*/
+
+
+/*START MENU*/
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #03a9f4 !important;
+    background-color: transparent;
+}
+.menu-top li a:hover { color: #03a9f4!important }
+.navbar-default.menu-shrink li a:hover { color: #03a9f4 !important }
+.navbar-default .navbar-toggle .icon-bar { background-color: #03a9f4 }
+/*END MENU*/
+
+.abh-member.abh-style1:hover .abh-member-meta,
+.skill-img .iq-video,
+.tabs li a:hover, .tabs li a:hover i, .tabs li.current a, .tabs li.current a i,
+.single_about:hover .about-icon,
+.single_about:hover,
+.section-title .sec_icon:after,
+.section-title .sec_icon:before ,
+.section-title .sec_icon span,
+.cd-slider-navs .cd-marker,
+.btn-home,
+.progress-bar,
+.my-team .pic::before,
+.my-team .pic::after,
+.my-team .social,
+.pricingTable:hover .pricingTable-header,
+.pricingTable:hover .read,
+.post-slide .post-info
+ {
+	background: #03a9f4;
+}	
+
+
+.btn-home-bg:hover,
+.btn-home-bg:focus,
+.our_work_menu ul li:hover, 
+.our_work_menu ul li.active
+{
+	background: #03a9f4;
+	border-color: #03a9f4;
+}
+#contact-form .btn-contact-bg{
+	background: #03a9f4!important;
+	border-color: #03a9f4!important;
+}
+#contact-form .btn-contact-bg:hover,
+#contact-form .btn-contact-bg:focus {
+    background: #333!important;
+    border: 1px solid #333!important;
+    color: #fff;
+}
+.single-pricing-table,
+.single_feature .feature_icon,
+.single_service.single_service:hover .service-icon,
+.single_feature .feat_number,
+.contact input:focus,
+.contact textarea:focus{
+	border-color: #03a9f4;
+}
+.skill-img .iq-waves .waves,
+.abh-member.abh-style1 .abh-member-meta,
+.sing_work_photo .team-content{
+	background: rgba(75, 204, 219, 0.6);
+}
+
+a,
+.tabs li a i,
+.copyright a,
+.pricing-content-price strong,
+.pricing-content-price sup,
+.single_about .about-icon,
+.single_feature .feature_icon,
+.cd-slider-navs a:hover,
+.about_single.about_single:hover i,
+.about_single.about_single:hover h4,
+.single_service.single_service:hover .title,
+.single_feature .feat_number,
+.pricingTable .price-value,
+.post-slide .post-title a,
+.post-slide .read:hover,
+.single_service i,
+.section-title h2 span{
+	color: #03a9f4;
+}
+.progress.pink .progress-bar::after {
+	border-bottom-color: #03a9f4;
+}
+.post-slide{
+	border-left: 4px solid #03a9f4;
+	border-bottom: 4px solid #03a9f4;
+}
+#home.home6:before,
+.gradient_area{
+	background: linear-gradient(to right ,#2889db ,#7ecad7);
+}
+.counter_feature {
+	background: linear-gradient(to right ,#2889db ,#7ecad7);
+}
+.newsletter {
+	background: linear-gradient(to right ,#7ecad7 ,#2889db);
+}
+#testimonial_area {
+	background: linear-gradient(to right ,#2889db ,#7ecad7);
+}
+.testimonial{
+	background: linear-gradient(to right ,#7ecad7 ,#2889db);
+}
+.pricingTable:hover .pricing-content ul::before, .pricingTable:hover .pricing-content ul::after {
+	background: linear-gradient(to bottom, #2889db 50%, #7ecad7 50%);
+}
+.partner-area {
+	background: linear-gradient(to right ,#7ecad7 ,#2889db);
+}
+.our-address {
+	background: linear-gradient(to right ,#2889db ,#7ecad7);
+}
