@@ -110,76 +110,6 @@
 
       <nav id="sidebar" data-behavior="1">
   <div class="sidebar-container">
-  <script>
-    const theCanvas = document.getElementById('theCanvas'),
-      ctx = theCanvas.getContext('2d'),
-      current_point = {
-        x: null, 
-        y: null, 
-        max: 20000,
-      };
-    let canvas_width = theCanvas.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
-      canvas_height = theCanvas.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight,
-      random_points = [],
-      all_points = [];
-    theCanvas.style = "position: fixed; top: 0px; left: 0px;";
-    function draw() {
-      
-      ctx.clearRect(0, 0, canvas_width, canvas_height);
-      let i,pi,x_dist,y_dist,dist,w;
-      
-      random_points.forEach((p, index) => {
-        p.x += p.xa,		
-        p.y += p.ya,
-        
-        p.xa *= p.x > canvas_width || p.x < 0 ? -1 : 1,
-        p.ya *= p.y > canvas_height || p.y < 0 ? -1 : 1,
-        ctx.fillRect(p.x - 0.5, p.y - 0.5, 1, 1);		
-        for(i = index + 1; i < all_points.length; i++ ) {
-          pi = all_points[i];
-          if(pi.x !== null && pi.y !== null) {
-            x_dist = p.x - pi.x;
-            y_dist = p.y - pi.y;
-            dist = x_dist * x_dist + y_dist * y_dist;
-            
-            dist < pi.max && (pi === current_point && dist >= pi.max / 2 && (p.x -= 0.03 * x_dist, p.y -= 0.03 * y_dist));
-            
-            w = (pi.max - dist) / pi.max;
-            ctx.beginPath();
-            ctx.lineWidth = w / 2;
-            ctx.strokeStyle = `rgba(110,110,110,${w + 0.2})`;
-            ctx.moveTo(p.x, p.y);
-            ctx.lineTo(pi.x, pi.y);
-            ctx.stroke();
-          }
-        }
-      }),requestAnimationFrame(draw);
-    }
-    
-    window.onmousemove = e => {
-      e = e || window.event;
-      current_point.x = e.clientX;
-      current_point.y = e.clientY;
-    };
-    window.onmouseout = () => {
-      current_point.x = null;
-      current_point.y = null;
-    };
-    
-    
-    for(let i = 0; i < 100; i++ ) {
-      let	x = Math.random() * canvas_width,	
-        y = Math.random() * canvas_height,
-        xa = 2 * Math.random() - 1,			
-        ya = 2 * Math.random() - 1,			
-        max = 6000;							
-      random_points[i] = {x, y, xa, ya, max};
-    }
-    
-    all_points = [...random_points,current_point];
-    
-    setTimeout(draw, 100);
-</script>
     
       <div class="sidebar-profile">
         <a href="https://example.org/#about" aria-label="Read more about the author">
@@ -295,7 +225,464 @@
         <section class="postShorten-group main-content-wrap">
           
           
+            
+  
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-top">
+  <div class="postShorten-wrap">
+    
+      
+        <a href="https://example.org/2015/06/welcome-to-tranquilpeak-0.5.3-beta/" aria-label="Open the post: Welcome to Tranquilpeak 0.5.3-BETA">
+      
+        <div class="postShorten-thumbnailimg">
+          <img alt="" src="//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city-750.jpg"/>
+        </div>
+      </a>
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title">
+      
+        <a class="link-unstyled" href="https://example.org/2015/06/welcome-to-tranquilpeak-0.5.3-beta/" aria-label="Open the post: Welcome to Tranquilpeak 0.5.3-BETA">
+      
+          Welcome to Tranquilpeak 0.5.3-BETA
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2015-06-15T00:00:00Z">
+        
+  June 15, 2015
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://example.org/categories/tranquilpeak">tranquilpeak</a>, 
+    
+      <a class="category-link" href="https://example.org/categories/releases">releases</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt">
+      
+        <p>Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.</p>
+      
+      <p>
+        
+          <a href="https://example.org/2015/06/welcome-to-tranquilpeak-0.5.3-beta/" class="postShorten-excerpt_link link" aria-label="Open the post: Welcome to Tranquilpeak 0.5.3-BETA">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
           
+            
+  
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-left">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title">
+      
+        <a class="link-unstyled" href="https://example.org/2015/06/who-is-using-tranquilpeak-hugo-theme/" aria-label="Open the post: Who&#39;s using Tranquilpeak Hugo Theme">
+      
+          Who&#39;s using Tranquilpeak Hugo Theme
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2015-06-14T00:00:00Z">
+        
+  June 14, 2015
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://example.org/categories/tranquilpeak">tranquilpeak</a>, 
+    
+      <a class="category-link" href="https://example.org/categories/showcase">showcase</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt">
+      
+        <p>Here you can find a list of the blogs that use Tranquilpeak theme, with different styles and customizations.</p>
+      
+      <p>
+        
+          <a href="https://example.org/2015/06/who-is-using-tranquilpeak-hugo-theme/" class="postShorten-excerpt_link link" aria-label="Open the post: Who&#39;s using Tranquilpeak Hugo Theme">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+    <a href="https://example.org/2015/06/who-is-using-tranquilpeak-hugo-theme/" aria-label="Open the post: Who&#39;s using Tranquilpeak Hugo Theme">
+      <div class="postShorten-thumbnailimg">
+        <img alt="" src="//d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg"/>
+      </div>
+    </a>
+  
+</article>
+
+          
+            
+  
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-left">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title">
+      
+        <a class="link-unstyled" href="https://example.org/2015/05/elements-showcase/" aria-label="Open the post: Elements showcase">
+      
+          Elements showcase
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2015-05-28T00:00:00Z">
+        
+  May 28, 2015
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://example.org/categories/tranquilpeak">tranquilpeak</a>, 
+    
+      <a class="category-link" href="https://example.org/categories/features">features</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt">
+      
+        <p>Check out how Tranquilpeak theme display well HTML elements (title, paragraph, blockquote, table and more..). It&rsquo;s simple and elegant.</p>
+      
+      <p>
+        
+          <a href="https://example.org/2015/05/elements-showcase/" class="postShorten-excerpt_link link" aria-label="Open the post: Elements showcase">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+    <a href="https://example.org/2015/05/elements-showcase/" aria-label="Open the post: Elements showcase">
+      <div class="postShorten-thumbnailimg">
+        <img alt="" src="//d1u9biwaxjngwg.cloudfront.net/elements-showcase/vintage-140.jpg"/>
+      </div>
+    </a>
+  
+</article>
+
+          
+            
+  
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-left">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title">
+      
+        <a class="link-unstyled" href="https://example.org/2015/05/cover-image-showcase/" aria-label="Open the post: Cover image showcase">
+      
+          Cover image showcase
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2015-05-13T00:00:00Z">
+        
+  May 13, 2015
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://example.org/categories/tranquilpeak">tranquilpeak</a>, 
+    
+      <a class="category-link" href="https://example.org/categories/features">features</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt">
+      
+        <p>Tranquilpeak integrate a unique &ldquo;cover image&rdquo; feature. Open this post to see how this feature sublimate your article.</p>
+      
+      <p>
+        
+          <a href="https://example.org/2015/05/cover-image-showcase/" class="postShorten-excerpt_link link" aria-label="Open the post: Cover image showcase">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+    <a href="https://example.org/2015/05/cover-image-showcase/" aria-label="Open the post: Cover image showcase">
+      <div class="postShorten-thumbnailimg">
+        <img alt="" src="//d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg"/>
+      </div>
+    </a>
+  
+</article>
+
+          
+            
+  
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-left">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title">
+      
+        <a class="link-unstyled" href="https://example.org/2015/03/highlighted-code-showcase/" aria-label="Open the post: highlighted code showcase">
+      
+          highlighted code showcase
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2015-03-23T00:00:00Z">
+        
+  March 23, 2015
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://example.org/categories/tranquilpeak">tranquilpeak</a>, 
+    
+      <a class="category-link" href="https://example.org/categories/features">features</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt">
+      
+        <p>Tranquilpeak Hugo theme have its own theme to highlight source code. It&rsquo;s based on GitHub theme: simple and elegant. Check out how it sublimate source codes.</p>
+      
+      <p>
+        
+          <a href="https://example.org/2015/03/highlighted-code-showcase/" class="postShorten-excerpt_link link" aria-label="Open the post: highlighted code showcase">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+    <a href="https://example.org/2015/03/highlighted-code-showcase/" aria-label="Open the post: highlighted code showcase">
+      <div class="postShorten-thumbnailimg">
+        <img alt="" src="//d1u9biwaxjngwg.cloudfront.net/highlighted-code-showcase/peak-140.jpg"/>
+      </div>
+    </a>
+  
+</article>
+
+          
+            
+  
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-left">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title">
+      
+        <a class="link-unstyled" href="https://example.org/2014/10/tags-plugins-showcase/" aria-label="Open the post: Tags plugins showcase">
+      
+          Tags plugins showcase
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2014-10-29T00:00:00Z">
+        
+  October 29, 2014
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt">
+      
+        <p>This post is used to show how tag plugins are displayed. See <a href="https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#tags">docs</a> for more info.</p>
+      
+      <p>
+        
+          <a href="https://example.org/2014/10/tags-plugins-showcase/" class="postShorten-excerpt_link link" aria-label="Open the post: Tags plugins showcase">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+    <a href="https://example.org/2014/10/tags-plugins-showcase/" aria-label="Open the post: Tags plugins showcase">
+      <div class="postShorten-thumbnailimg">
+        <img alt="" src="//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-6-140.jpg"/>
+      </div>
+    </a>
+  
+</article>
+
+          
+            
+  
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-left">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title">
+      
+        <a class="link-unstyled" href="https://example.org/2014/08/hidden-social-section-showcase/" aria-label="Open the post: Hidden social section showcase">
+      
+          Hidden social section showcase
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2014-08-17T00:00:00Z">
+        
+  August 17, 2014
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://example.org/categories/tranquilpeak">tranquilpeak</a>, 
+    
+      <a class="category-link" href="https://example.org/categories/features">features</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt">
+      
+        <p>This post is used to show how a site looks if the social section is hidden.</p>
+      
+      <p>
+        
+          <a href="https://example.org/2014/08/hidden-social-section-showcase/" class="postShorten-excerpt_link link" aria-label="Open the post: Hidden social section showcase">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+    <a href="https://example.org/2014/08/hidden-social-section-showcase/" aria-label="Open the post: Hidden social section showcase">
+      <div class="postShorten-thumbnailimg">
+        <img alt="" src="//d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg"/>
+      </div>
+    </a>
+  
+</article>
+
+          
+          
+  <div class="pagination-bar">
+    <ul class="pagination">
+      
+        
+        
+          <li class="pagination-next">
+            <a class="btn btn--default btn--small" href="https://example.org/page/2/" aria-label="OLDER POSTS">
+              <span>OLDER POSTS</span>
+              <i class="fa fa-angle-right text-base icon-ml"></i>
+            </a>
+          </li>
+        
+      
+      <li class="pagination-number">page 1 of 2</li>
+    </ul>
+  </div>
+
 
         </section>
         <footer id="footer" class="main-content-wrap">
