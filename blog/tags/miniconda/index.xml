@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>miniconda on Eón Corp Blog</title>
+    <link>https://eoncorp.ec/blog/tags/miniconda/</link>
+    <description>Recent content in miniconda on Eón Corp Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://eoncorp.ec/blog/tags/miniconda/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalación Miniconda</title>
+      <link>https://eoncorp.ec/blog/2023/06/instalaci%C3%B3n-miniconda/</link>
+      <pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://eoncorp.ec/blog/2023/06/instalaci%C3%B3n-miniconda/</guid>
+      <description>&lt;p&gt;En este manual, te guiaré a través del proceso de instalación de Conda, una popular herramienta de gestión de paquetes y entornos virtuales para el desarrollo de software en Python.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
