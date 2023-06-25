@@ -303,10 +303,10 @@ canonifyurls = true
     url = "https://twitter.com/intent/tweet?text=%s"
 
 
-#  [[params.sharingOptions]]
-#    name = "Whatsapp"
-#    icon = "fab fa-whatsapp"
-#    url = "https://wa.me/?text=%s"
+  [[params.sharingOptions]]
+    name = "Whatsapp"
+    icon = "fab fa-whatsapp"
+    url = "https://wa.me/593988511884?text=%s"
 
   [[params.sharingOptions]]
     name = "Linkedin"
