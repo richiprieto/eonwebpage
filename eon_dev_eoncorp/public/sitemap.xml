@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>localhost/categories/</loc>
+    <lastmod>2023-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/</loc>
+    <lastmod>2023-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/tags/instalacion/</loc>
+    <lastmod>2023-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/2023/06/instalaci%C3%B3n-miniconda/</loc>
+    <lastmod>2023-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/tags/miniconda/</loc>
+    <lastmod>2023-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/posts/</loc>
+    <lastmod>2023-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/tags/</loc>
+    <lastmod>2023-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/tags/tutorial/</loc>
+    <lastmod>2023-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/categories/tutorial/</loc>
+    <lastmod>2023-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/archives/</loc>
+  </url>
+  
+</urlset>
