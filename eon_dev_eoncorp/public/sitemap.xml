@@ -3,52 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>localhost/categories/</loc>
+    <loc>http://eoncorp.ec/blog/categories/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/</loc>
+    <loc>http://eoncorp.ec/blog/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/instalacion/</loc>
+    <loc>http://eoncorp.ec/blog/tags/instalacion/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/2023/06/instalaci%C3%B3n-miniconda/</loc>
+    <loc>http://eoncorp.ec/blog/2023/06/instalaci%C3%B3n-miniconda/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/miniconda/</loc>
+    <loc>http://eoncorp.ec/blog/tags/miniconda/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/posts/</loc>
+    <loc>http://eoncorp.ec/blog/posts/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/</loc>
+    <loc>http://eoncorp.ec/blog/tags/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/tutorial/</loc>
+    <loc>http://eoncorp.ec/blog/tags/tutorial/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/categories/tutorial/</loc>
+    <loc>http://eoncorp.ec/blog/categories/tutorial/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/archives/</loc>
+    <loc>http://eoncorp.ec/blog/archives/</loc>
   </url>
   
 </urlset>

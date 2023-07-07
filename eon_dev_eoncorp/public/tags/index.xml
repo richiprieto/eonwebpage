@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Eón Corp Blog</title>
-    <link>localhost/tags/</link>
+    <link>http://eoncorp.ec/blog/tags/</link>
     <description>Recent content in Tags on Eón Corp Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>info@eoncorp.ec - eonecuador@gmail.com (Eón Corp)</managingEditor>
     <webMaster>info@eoncorp.ec - eonecuador@gmail.com (Eón Corp)</webMaster>
-    <lastBuildDate>Sun, 25 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="localhost/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://eoncorp.ec/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>instalacion</title>
-      <link>localhost/tags/instalacion/</link>
+      <link>http://eoncorp.ec/blog/tags/instalacion/</link>
       <pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate>
       <author>info@eoncorp.ec - eonecuador@gmail.com (Eón Corp)</author>
-      <guid>localhost/tags/instalacion/</guid>
+      <guid>http://eoncorp.ec/blog/tags/instalacion/</guid>
       <description></description>
     </item>
     
     <item>
       <title>miniconda</title>
-      <link>localhost/tags/miniconda/</link>
+      <link>http://eoncorp.ec/blog/tags/miniconda/</link>
       <pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate>
       <author>info@eoncorp.ec - eonecuador@gmail.com (Eón Corp)</author>
-      <guid>localhost/tags/miniconda/</guid>
+      <guid>http://eoncorp.ec/blog/tags/miniconda/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tutorial</title>
-      <link>localhost/tags/tutorial/</link>
+      <link>http://eoncorp.ec/blog/tags/tutorial/</link>
       <pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate>
       <author>info@eoncorp.ec - eonecuador@gmail.com (Eón Corp)</author>
-      <guid>localhost/tags/tutorial/</guid>
+      <guid>http://eoncorp.ec/blog/tags/tutorial/</guid>
       <description></description>
     </item>
     

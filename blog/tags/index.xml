@@ -2,233 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Eón Corp Blog</title>
-    <link>https://eoncorp.ec/blog/tags/</link>
+    <link>http://eoncorp.ec/blog/tags/</link>
     <description>Recent content in Tags on Eón Corp Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://eoncorp.ec/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>info@eoncorp.ec - eonecuador@gmail.com (Eón Corp)</managingEditor>
+    <webMaster>info@eoncorp.ec - eonecuador@gmail.com (Eón Corp)</webMaster>
+    <lastBuildDate>Sun, 25 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://eoncorp.ec/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>instalacion</title>
-      <link>https://eoncorp.ec/blog/tags/instalacion/</link>
+      <link>http://eoncorp.ec/blog/tags/instalacion/</link>
       <pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/instalacion/</guid>
+      <author>info@eoncorp.ec - eonecuador@gmail.com (Eón Corp)</author>
+      <guid>http://eoncorp.ec/blog/tags/instalacion/</guid>
       <description></description>
     </item>
     
     <item>
       <title>miniconda</title>
-      <link>https://eoncorp.ec/blog/tags/miniconda/</link>
+      <link>http://eoncorp.ec/blog/tags/miniconda/</link>
       <pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/miniconda/</guid>
+      <author>info@eoncorp.ec - eonecuador@gmail.com (Eón Corp)</author>
+      <guid>http://eoncorp.ec/blog/tags/miniconda/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tutorial</title>
-      <link>https://eoncorp.ec/blog/tags/tutorial/</link>
+      <link>http://eoncorp.ec/blog/tags/tutorial/</link>
       <pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>disqus</title>
-      <link>https://eoncorp.ec/blog/tags/disqus/</link>
-      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/disqus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>google analytics</title>
-      <link>https://eoncorp.ec/blog/tags/google-analytics/</link>
-      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/google-analytics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>gravatar</title>
-      <link>https://eoncorp.ec/blog/tags/gravatar/</link>
-      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/gravatar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hexo theme</title>
-      <link>https://eoncorp.ec/blog/tags/hexo-theme/</link>
-      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/hexo-theme/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>responsive</title>
-      <link>https://eoncorp.ec/blog/tags/responsive/</link>
-      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/responsive/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>html elements</title>
-      <link>https://eoncorp.ec/blog/tags/html-elements/</link>
-      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/html-elements/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>https://eoncorp.ec/blog/tags/markdown/</link>
-      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cover image</title>
-      <link>https://eoncorp.ec/blog/tags/cover-image/</link>
-      <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/cover-image/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>github theme</title>
-      <link>https://eoncorp.ec/blog/tags/github-theme/</link>
-      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/github-theme/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>highlight code</title>
-      <link>https://eoncorp.ec/blog/tags/highlight-code/</link>
-      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/highlight-code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test</title>
-      <link>https://eoncorp.ec/blog/tags/test/</link>
-      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/test/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tag plugins</title>
-      <link>https://eoncorp.ec/blog/tags/tag-plugins/</link>
-      <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/tag-plugins/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>social</title>
-      <link>https://eoncorp.ec/blog/tags/social/</link>
-      <pubDate>Sun, 17 Aug 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/social/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tags</title>
-      <link>https://eoncorp.ec/blog/tags/tags/</link>
-      <pubDate>Sat, 16 Aug 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pagination</title>
-      <link>https://eoncorp.ec/blog/tags/pagination/</link>
-      <pubDate>Fri, 15 Aug 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/pagination/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dailymotion</title>
-      <link>https://eoncorp.ec/blog/tags/dailymotion/</link>
-      <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/dailymotion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>videos integration</title>
-      <link>https://eoncorp.ec/blog/tags/videos-integration/</link>
-      <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/videos-integration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vimeo</title>
-      <link>https://eoncorp.ec/blog/tags/vimeo/</link>
-      <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/vimeo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>youtube</title>
-      <link>https://eoncorp.ec/blog/tags/youtube/</link>
-      <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/youtube/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>chinese</title>
-      <link>https://eoncorp.ec/blog/tags/chinese/</link>
-      <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/chinese/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>image gallery</title>
-      <link>https://eoncorp.ec/blog/tags/image-gallery/</link>
-      <pubDate>Mon, 18 Feb 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/image-gallery/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>japanese</title>
-      <link>https://eoncorp.ec/blog/tags/japanese/</link>
-      <pubDate>Wed, 02 Jan 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://eoncorp.ec/blog/tags/japanese/</guid>
+      <author>info@eoncorp.ec - eonecuador@gmail.com (Eón Corp)</author>
+      <guid>http://eoncorp.ec/blog/tags/tutorial/</guid>
       <description></description>
     </item>
     
