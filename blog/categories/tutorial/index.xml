@@ -18,5 +18,14 @@
       <description>&lt;p&gt;En este manual, te guiaré a través del proceso de instalación de Conda, una popular herramienta de gestión de paquetes y entornos virtuales para el desarrollo de software en Python.&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Reconocimiento de Voz en Tiempo Real con PocketSphinx: ¡Habla y Escucha con Python!</title>
+      <link>https://www.eoncorp.ec/blog/2018/01/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python/</link>
+      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
+      <author>info@eoncorp.ec - eonecuador@gmail.com (Eón Corp)</author>
+      <guid>https://www.eoncorp.ec/blog/2018/01/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python/</guid>
+      <description>&lt;p&gt;¡Hola amigos! En esta ocasión, nos complace presentarles una solución sencilla para el reconocimiento de voz en tiempo real utilizando Python y PocketSphinx. Con esta tecnología, podrás experimentar la magia de convertir tu voz en texto de manera instantánea.&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

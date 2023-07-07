@@ -18,5 +18,14 @@
       <description></description>
     </item>
     
+    <item>
+      <title>noticias</title>
+      <link>https://www.eoncorp.ec/blog/categories/noticias/</link>
+      <pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate>
+      <author>info@eoncorp.ec - eonecuador@gmail.com (Eón Corp)</author>
+      <guid>https://www.eoncorp.ec/blog/categories/noticias/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

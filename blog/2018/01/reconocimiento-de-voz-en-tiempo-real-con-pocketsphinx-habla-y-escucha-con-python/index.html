@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Reconocimiento de Voz en Tiempo Real con PocketSphinx: ¡Habla y Escucha con Python!",
+  
+  "image": "https://www.eoncorp.ec/blog/images/miniconda_tuto.png",
+  
+  "datePublished": "2018-01-24T00:00:00Z",
+  "dateModified": "2018-01-24T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Eón Corp",
+    
+    "image": "https://www.eoncorp.ec/assets/img/logo.png"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/www.eoncorp.ec\/blog\/2018\/01\/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Eón Corp Blog",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.eoncorp.ec/assets/img/logo.png"
+    }
+    
+  },
+  "description": "¡Hola amigos! En esta ocasión, nos complace presentarles una solución sencilla para el reconocimiento de voz en tiempo real utilizando Python y PocketSphinx. Con esta tecnología, podrás experimentar la magia de convertir tu voz en texto de manera instantánea.\n",
+  "keywords": []
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.115.1 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="Eón Corp">
+<meta name="keywords" content="">
+<meta name="description" content="¡Hola amigos! En esta ocasión, nos complace presentarles una solución sencilla para el reconocimiento de voz en tiempo real utilizando Python y PocketSphinx. Con esta tecnología, podrás experimentar la magia de convertir tu voz en texto de manera instantánea.">
+
+
+<meta property="og:description" content="¡Hola amigos! En esta ocasión, nos complace presentarles una solución sencilla para el reconocimiento de voz en tiempo real utilizando Python y PocketSphinx. Con esta tecnología, podrás experimentar la magia de convertir tu voz en texto de manera instantánea.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Reconocimiento de Voz en Tiempo Real con PocketSphinx: ¡Habla y Escucha con Python!">
+<meta name="twitter:title" content="Reconocimiento de Voz en Tiempo Real con PocketSphinx: ¡Habla y Escucha con Python!">
+<meta property="og:url" content="https://www.eoncorp.ec/blog/2018/01/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python/">
+<meta property="twitter:url" content="https://www.eoncorp.ec/blog/2018/01/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python/">
+<meta property="og:site_name" content="Eón Corp Blog">
+<meta property="og:description" content="¡Hola amigos! En esta ocasión, nos complace presentarles una solución sencilla para el reconocimiento de voz en tiempo real utilizando Python y PocketSphinx. Con esta tecnología, podrás experimentar la magia de convertir tu voz en texto de manera instantánea.">
+<meta name="twitter:description" content="¡Hola amigos! En esta ocasión, nos complace presentarles una solución sencilla para el reconocimiento de voz en tiempo real utilizando Python y PocketSphinx. Con esta tecnología, podrás experimentar la magia de convertir tu voz en texto de manera instantánea.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2018-01-24T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2018-01-24T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="tutorial">
+    
+  
+  
+    
+      <meta property="article:tag" content="reconocimiento de voz">
+    
+      <meta property="article:tag" content="pocketsphinx">
+    
+      <meta property="article:tag" content="python">
+    
+      <meta property="article:tag" content="idioma español">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.eoncorp.ec/assets/img/logo.png">
+  <meta property="twitter:image" content="https://www.eoncorp.ec/assets/img/logo.png">
+
+
+
+
+
+  <meta property="og:image" content="https://www.eoncorp.ec/blog/images/miniconda_tuto.png">
+  <meta property="twitter:image" content="https://www.eoncorp.ec/blog/images/miniconda_tuto.png">
+
+
+    <title>Reconocimiento de Voz en Tiempo Real con PocketSphinx: ¡Habla y Escucha con Python!</title>
+
+    <link rel="icon" href="https://www.eoncorp.ec/blog/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://www.eoncorp.ec/blog/2018/01/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://www.eoncorp.ec/blog/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://www.eoncorp.ec/blog/" aria-label="Go to homepage">Eón Corp Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://www.eoncorp.ec/blog/#about" aria-label="Open the link: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.eoncorp.ec/assets/img/logo.png" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://www.eoncorp.ec/blog/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://www.eoncorp.ec/assets/img/logo.png" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Eón Corp</h4>
+        
+          <h5 class="sidebar-profile-bio">Empresa Ecuatoriana de <strong>Tecnología</strong></h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://www.eoncorp.ec/" target="_blank" rel="noopener" title="Inicio">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.eoncorp.ec/blog/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.eoncorp.ec/blog/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.eoncorp.ec/blog/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.eoncorp.ec/blog/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.facebook.com/eonecuador" target="_blank" rel="noopener" title="Facebook">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-facebook" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Facebook</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.eoncorp.ec/blog/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      Reconocimiento de Voz en Tiempo Real con PocketSphinx: ¡Habla y Escucha con Python!
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2018-01-24T00:00:00Z">
+        
+  January 24, 2018
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://www.eoncorp.ec/blog/categories/tutorial">tutorial</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>¡Hola amigos! En esta ocasión, nos complace presentarles una solución sencilla para el reconocimiento de voz en tiempo real utilizando Python y PocketSphinx. Con esta tecnología, podrás experimentar la magia de convertir tu voz en texto de manera instantánea.</p>
+<p>Para comenzar, debemos descargar las librerías base Sphinxbase y Pocketsphinx. Para ello, seguiremos unos simples pasos. Abrimos la consola y escribimos los siguientes comandos:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install autoconf libtool automake bison python-dev swig libpulse-dev
+</span></span><span style="display:flex;"><span>mkdir sphinx
+</span></span><span style="display:flex;"><span>cd sphinx
+</span></span><span style="display:flex;"><span>git clone https://github.com/cmusphinx/sphinxbase
+</span></span><span style="display:flex;"><span>git clone https://github.com/cmusphinx/pocketsphinx</span></span></code></pre></div>
+<p>Posteriormente, procederemos a instalar las librerías en nuestro sistema:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd sphinxbase
+</span></span><span style="display:flex;"><span>./autogen.sh
+</span></span><span style="display:flex;"><span>make
+</span></span><span style="display:flex;"><span>sudo make install
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cd ../pocketsphinx
+</span></span><span style="display:flex;"><span>./autogen.sh
+</span></span><span style="display:flex;"><span>make
+</span></span><span style="display:flex;"><span>sudo make install</span></span></code></pre></div></p>
+<p>¡Excelente! Ahora instalaremos la interfaz que nos permitirá utilizar PocketSphinx con Python. Asegúrate de tener la última versión de setuptools y wheel instalada ejecutando los siguientes comandos:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install --upgrade pip setuptools wheel
+</span></span><span style="display:flex;"><span>pip install --upgrade pocketsphinx</span></span></code></pre></div>
+<p>Una vez completados estos pasos, agregaremos el idioma español a nuestro reconocimiento de voz. Para ello, nos dirigimos a la siguiente dirección: [enlace a la dirección]. Descargaremos los siguientes archivos: <code>cmusphinx-es-5.2.tar.gz, es-20k.lm.gz, es.dict</code>.</p>
+<p>Descomprimimos los archivos <code>cmusphinx-es5.2.tar.gz y es-20k.lm.gz</code>. Estos archivos contienen los modelos y el diccionario que utilizaremos para el idioma español.</p>
+<p>Cabe recalcar que utilizaremos el modelo de Hidden Markov Models <a href="#1">[1]</a><a href="#2">[2]</a>.</p>
+<p>A continuación, abrimos la consola nuevamente y ejecutamos el siguiente comando para obtener la dirección en la que debemos guardar los archivos recién descomprimidos. Antes de eso, realizaremos algunos cambios: renombraremos el archivo <strong>es-20k.lm</strong> a <strong>es-20k.lm.bin</strong>. Luego, ingresaremos a la carpeta <strong>cmusphinx-es-5.2</strong> y encontraremos una subcarpeta llamada <strong>model_parameters</strong> que contiene una carpeta similar a <strong>voxforge_es_sphinx.cd_ptm_4000</strong>. La renombraremos como <strong>es-es</strong>.</p>
+<p>Finalmente, copiamos el archivo y la carpeta renombrados (<strong>es-20k.lm.bin</strong> y <strong>es-es</strong>) en la dirección del modelo, junto con el archivo <strong>es.dict</strong>.</p>
+<p>¡Ya estamos listos para probar nuestro script! Abrimos Atom o tu editor de texto favorito y copiamos el siguiente script. También puedes descargarlo desde nuestro repositorio en GitHub: <a href="https://github.com/richiprieto/SpeechRecognition">Click Aqui</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> pocketsphinx <span style="color:#f92672">import</span> LiveSpeech, get_model_path
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>model_path <span style="color:#f92672">=</span> get_model_path()
+</span></span><span style="display:flex;"><span>print(model_path)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>speech <span style="color:#f92672">=</span> LiveSpeech(
+</span></span><span style="display:flex;"><span>    verbose<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+</span></span><span style="display:flex;"><span>    sampling_rate<span style="color:#f92672">=</span><span style="color:#ae81ff">16000</span>,
+</span></span><span style="display:flex;"><span>    buffer_size<span style="color:#f92672">=</span><span style="color:#ae81ff">2048</span>,
+</span></span><span style="display:flex;"><span>    no_search<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+</span></span><span style="display:flex;"><span>    full_utt<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+</span></span><span style="display:flex;"><span>    hmm<span style="color:#f92672">=</span>os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(model_path, <span style="color:#e6db74">&#39;es-es&#39;</span>),
+</span></span><span style="display:flex;"><span>    lm<span style="color:#f92672">=</span>os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(model_path, <span style="color:#e6db74">&#39;es-20k.lm.bin&#39;</span>),
+</span></span><span style="display:flex;"><span>    dict<span style="color:#f92672">=</span>os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(model_path, <span style="color:#e6db74">&#39;es.dict&#39;</span>)
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> phrase <span style="color:#f92672">in</span> speech:
+</span></span><span style="display:flex;"><span>    print(phrase)</span></span></code></pre></div>
+<p>¡Genial! Ahora solo debes ejecutar el script y disfrutar del reconocimiento de voz en tiempo real con PocketSphinx. Podrás ver los resultados en la consola.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/T-l2OIJAy8Q" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Esperamos que esta solución haya sido de tu agrado. Recuerda que en EÓN estamos comprometidos con la innovación tecnológica y seguimos explorando nuevas formas de mejorar nuestras interacciones con la voz.</p>
+<p>¡Hasta la próxima!</p>
+<p>Bibliografía:</p>
+<ul>
+<li><!-- raw HTML omitted -->[1]<!-- raw HTML omitted --> <a href="https://web.stanford.edu/~jurafsky/slp3/9.pdf">Jurafsky</a></li>
+<li><!-- raw HTML omitted -->[2]<!-- raw HTML omitted --> <a href="http://mlg.eng.cam.ac.uk/zoubin/papers/ijprai.pdf">Zoubin</a></li>
+</ul>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://www.eoncorp.ec/blog/tags/reconocimiento-de-voz/">reconocimiento de voz</a>
+
+  <a class="tag tag--primary tag--small" href="https://www.eoncorp.ec/blog/tags/pocketsphinx/">pocketsphinx</a>
+
+  <a class="tag tag--primary tag--small" href="https://www.eoncorp.ec/blog/tags/python/">python</a>
+
+  <a class="tag tag--primary tag--small" href="https://www.eoncorp.ec/blog/tags/idioma-espa%C3%B1ol/">idioma español</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://www.eoncorp.ec/blog/2023/06/instalaci%C3%B3n-miniconda/" data-tooltip="Instalación Miniconda" aria-label="NEXT: Instalación Miniconda">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://www.eoncorp.ec/blog/2017/10/fomentando-el-emprendimiento-e-innovaci%C3%B3n-aei-y-municipio-de-cuenca-se-unen-para-desarrollar-una-normativa/" data-tooltip="Fomentando el Emprendimiento e Innovación: AEI y Municipio de Cuenca se unen para desarrollar una normativa" aria-label="PREVIOUS: Fomentando el Emprendimiento e Innovación: AEI y Municipio de Cuenca se unen para desarrollar una normativa">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://www.eoncorp.ec/blog/2018/01/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://www.eoncorp.ec/blog/2018/01/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://wa.me/593988511884?text=https://www.eoncorp.ec/blog/2018/01/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python/" title="Share on Whatsapp" aria-label="Share on Whatsapp">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.eoncorp.ec/blog/2018/01/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/www.eoncorp.ec\/blog\/2018\/01\/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python\/';
+        
+          this.page.identifier = '\/2018\/01\/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hugo-tranquilpeak-theme';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2023 Eón Corp. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://www.eoncorp.ec/blog/2023/06/instalaci%C3%B3n-miniconda/" data-tooltip="Instalación Miniconda" aria-label="NEXT: Instalación Miniconda">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://www.eoncorp.ec/blog/2017/10/fomentando-el-emprendimiento-e-innovaci%C3%B3n-aei-y-municipio-de-cuenca-se-unen-para-desarrollar-una-normativa/" data-tooltip="Fomentando el Emprendimiento e Innovación: AEI y Municipio de Cuenca se unen para desarrollar una normativa" aria-label="PREVIOUS: Fomentando el Emprendimiento e Innovación: AEI y Municipio de Cuenca se unen para desarrollar una normativa">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://www.eoncorp.ec/blog/2018/01/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://www.eoncorp.ec/blog/2018/01/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://wa.me/593988511884?text=https://www.eoncorp.ec/blog/2018/01/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python/" title="Share on Whatsapp" aria-label="Share on Whatsapp">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.eoncorp.ec/blog/2018/01/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.eoncorp.ec%2Fblog%2F2018%2F01%2Freconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python%2F" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.eoncorp.ec%2Fblog%2F2018%2F01%2Freconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python%2F" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://wa.me/593988511884?text=https%3A%2F%2Fwww.eoncorp.ec%2Fblog%2F2018%2F01%2Freconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python%2F" aria-label="Share on Whatsapp">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i><span>Share on Whatsapp</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.eoncorp.ec%2Fblog%2F2018%2F01%2Freconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python%2F" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>Share on Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.eoncorp.ec/assets/img/logo.png" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Eón Corp</h4>
+    
+      <div id="about-card-bio">Empresa Ecuatoriana de <strong>Tecnología</strong></div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Tecnología
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        Ecuador
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://www.eoncorp.ec/blog/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://www.eoncorp.ec/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+
