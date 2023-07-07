@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Eón Corp Blog</title>
+    <link>https://www.eoncorp.ec/blog/tags/python/</link>
+    <description>Recent content in python on Eón Corp Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>info@eoncorp.ec - eonecuador@gmail.com (Eón Corp)</managingEditor>
+    <webMaster>info@eoncorp.ec - eonecuador@gmail.com (Eón Corp)</webMaster>
+    <lastBuildDate>Wed, 24 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://www.eoncorp.ec/blog/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reconocimiento de Voz en Tiempo Real con PocketSphinx: ¡Habla y Escucha con Python!</title>
+      <link>https://www.eoncorp.ec/blog/2018/01/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python/</link>
+      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
+      <author>info@eoncorp.ec - eonecuador@gmail.com (Eón Corp)</author>
+      <guid>https://www.eoncorp.ec/blog/2018/01/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python/</guid>
+      <description>&lt;p&gt;¡Hola amigos! En esta ocasión, nos complace presentarles una solución sencilla para el reconocimiento de voz en tiempo real utilizando Python y PocketSphinx. Con esta tecnología, podrás experimentar la magia de convertir tu voz en texto de manera instantánea.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

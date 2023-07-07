@@ -1,54 +1,166 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://www.eoncorp.ec/blog/categories/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.eoncorp.ec/blog/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.eoncorp.ec/blog/tags/instalacion/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.eoncorp.ec/blog/2023/06/instalaci%C3%B3n-miniconda/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.eoncorp.ec/blog/tags/miniconda/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.eoncorp.ec/blog/posts/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.eoncorp.ec/blog/tags/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.eoncorp.ec/blog/tags/tutorial/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.eoncorp.ec/blog/categories/tutorial/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/idioma-espa%C3%B1ol/</loc>
+    <lastmod>2018-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/pocketsphinx/</loc>
+    <lastmod>2018-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/python/</loc>
+    <lastmod>2018-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/reconocimiento-de-voz/</loc>
+    <lastmod>2018-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/2018/01/reconocimiento-de-voz-en-tiempo-real-con-pocketsphinx-habla-y-escucha-con-python/</loc>
+    <lastmod>2018-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/aei/</loc>
+    <lastmod>2017-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/desarrollo-productivo/</loc>
+    <lastmod>2017-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/emprendimiento/</loc>
+    <lastmod>2017-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/2017/10/fomentando-el-emprendimiento-e-innovaci%C3%B3n-aei-y-municipio-de-cuenca-se-unen-para-desarrollar-una-normativa/</loc>
+    <lastmod>2017-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/innovaci%C3%B3n/</loc>
+    <lastmod>2017-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/municipio-de-cuenca/</loc>
+    <lastmod>2017-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/categories/noticias/</loc>
+    <lastmod>2017-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/an%C3%A1lisis-de-personalidad/</loc>
+    <lastmod>2017-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/datalat/</loc>
+    <lastmod>2017-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/datos-y-bielas/</loc>
+    <lastmod>2017-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/2017/05/datos-y-bielas-e%C3%B3n-presenta-investigaci%C3%B3n-de-an%C3%A1lisis-de-personalidad-en-redes-sociales-en-el-evento-datos-y-bielas/</loc>
+    <lastmod>2017-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/investigaci%C3%B3n/</loc>
+    <lastmod>2017-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/redes-sociales/</loc>
+    <lastmod>2017-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/twitter/</loc>
+    <lastmod>2017-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/2017/05/celebrando-el-d%C3%ADa-de-las-telecomunicaciones-y-la-sociedad-de-la-informaci%C3%B3n-enfoque-en-la-cultura-hacker-y-el-hacking-%C3%A9tico/</loc>
+    <lastmod>2017-05-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/conferencias/</loc>
+    <lastmod>2017-05-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/dia-de-las-telecomunicaciones/</loc>
+    <lastmod>2017-05-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/hacking-%C3%A9tico/</loc>
+    <lastmod>2017-05-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/seguridad-inform%C3%A1tica/</loc>
+    <lastmod>2017-05-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/charla/</loc>
+    <lastmod>2016-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/cuenca/</loc>
+    <lastmod>2016-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/2016/12/cuenca-hacia-una-sociedad-digital-innovaci%C3%B3n-tecnol%C3%B3gica-para-una-ciudad-inclusiva-y-sustentable/</loc>
+    <lastmod>2016-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/etica/</loc>
+    <lastmod>2016-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/hacking/</loc>
+    <lastmod>2016-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/2016/12/promoviendo-la-%C3%A9tica-y-la-seguridad-en-el-mundo-digital-charlas-gratuitas-sobre-hacking-%C3%A9tico/</loc>
+    <lastmod>2016-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/sociedad-digital/</loc>
+    <lastmod>2016-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/transformaci%C3%B3n-digital/</loc>
+    <lastmod>2016-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/ciudad/</loc>
+    <lastmod>2016-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/2016/11/cuenca-ciudad-digital-encuentro-tecnol%C3%B3gico-impulsa-la-innovaci%C3%B3n-en-la-regi%C3%B3n/</loc>
+    <lastmod>2016-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/digital/</loc>
+    <lastmod>2016-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/encuentro/</loc>
+    <lastmod>2016-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/concurso/</loc>
+    <lastmod>2016-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/hackathon/</loc>
+    <lastmod>2016-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/iot/</loc>
+    <lastmod>2016-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/2016/06/proyecto-universal-de-e%C3%B3n-triunfa-en-el-hackathon-de-la-universidad-polit%C3%A9cnica-salesiana/</loc>
+    <lastmod>2016-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/universal/</loc>
+    <lastmod>2016-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/gridec/</loc>
+    <lastmod>2016-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/2016/05/gridec-se-presenta-en-retos-yachay-2015/</loc>
+    <lastmod>2016-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.eoncorp.ec/blog/tags/yachay/</loc>
+    <lastmod>2016-05-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.eoncorp.ec/blog/archives/</loc>
   </url>
-  
 </urlset>
