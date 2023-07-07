@@ -21,6 +21,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+cp public/js/script* ../js
 rm -rf ../blog
 cp -r public ../
 mv ../public ../blog
