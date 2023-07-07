@@ -9,7 +9,7 @@ tags:
 - hacking ético
 - seguridad informática
 thumbnailImagePosition: left
-thumbnailImage: images/miniconda_tuto.png
+thumbnailImage: images/diatelco.jpeg
 ---
 El día de hoy, la Universidad Politécnica Salesiana fue el escenario de la celebración del Día de las Telecomunicaciones y la Sociedad de la Información.
 <!--more-->

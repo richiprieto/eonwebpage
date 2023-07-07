@@ -9,7 +9,7 @@ tags:
 - python
 - idioma español
 thumbnailImagePosition: left
-thumbnailImage: images/miniconda_tuto.png
+thumbnailImage: images/pocketsphinx.jpg
 ---
 ¡Hola amigos! En esta ocasión, nos complace presentarles una solución sencilla para el reconocimiento de voz en tiempo real utilizando Python y PocketSphinx. Con esta tecnología, podrás experimentar la magia de convertir tu voz en texto de manera instantánea.
 <!--more-->

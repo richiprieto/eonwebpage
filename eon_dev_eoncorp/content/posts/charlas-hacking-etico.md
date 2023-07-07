@@ -8,7 +8,7 @@ tags:
 - etica
 - charla
 thumbnailImagePosition: left
-thumbnailImage: images/miniconda_tuto.png
+thumbnailImage: images/charlahacking.jpeg
 ---
 En el marco del mes del software libre, el Director de Tecnología de la empresa EÓN, Ricardo M. Prieto, ha impartido charlas gratuitas en la Universidad Politécnica Salesiana, centradas en el tema del hacking ético. Estudiantes de tres universidades de la ciudad de Cuenca se reunieron durante dos días para asistir a este curso teórico-práctico.
 <!--more-->

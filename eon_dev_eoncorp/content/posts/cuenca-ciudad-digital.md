@@ -9,7 +9,7 @@ tags:
 - digital
 - encuentro
 thumbnailImagePosition: left
-thumbnailImage: images/miniconda_tuto.png
+thumbnailImage: images/encuentrotech.png
 ---
 Hoy, más de 15 empresas y emprendedores tecnológicos se reúnen en la Cámara de Comercio de Cuenca para exhibir sus proyectos de desarrollo de software, aplicaciones y más.
 <!--more-->

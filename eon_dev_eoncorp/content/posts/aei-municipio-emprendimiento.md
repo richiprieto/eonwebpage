@@ -10,7 +10,7 @@ tags:
 - Municipio de Cuenca
 - desarrollo productivo
 thumbnailImagePosition: left
-thumbnailImage: images/miniconda_tuto.png
+thumbnailImage: images/aei.jpeg
 ---
 La Alianza para el Emprendimiento y la Innovación del Ecuador (AEI), una red conformada por actores públicos, privados y académicos comprometidos con el fomento del emprendimiento y la innovación a nivel nacional, ha colaborado con el Municipio de Cuenca en el desarrollo de mesas de trabajo para la creación de una normativa de emprendimiento.
 <!--more-->

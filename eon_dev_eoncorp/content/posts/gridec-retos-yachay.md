@@ -7,7 +7,7 @@ tags:
 - yachay
 - gridec
 thumbnailImagePosition: left
-thumbnailImage: images/miniconda_tuto.png
+thumbnailImage: images/gridecyachay.jpeg
 ---
 GridEC, el innovador producto desarrollado por la empresa EÓN, ha sido presentado como semifinalista en el prestigioso concurso "Retos Yachay 2015", organizado por Yachay E.P.
 <!--more-->

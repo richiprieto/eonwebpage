@@ -9,7 +9,7 @@ tags:
 - concurso
 - hackathon
 thumbnailImagePosition: left
-thumbnailImage: images/miniconda_tuto.png
+thumbnailImage: images/universal.jpeg
 ---
 Los talentosos miembros de la empresa EÓN participaron en el hackathon organizado en las instalaciones de la Universidad Politécnica Salesiana, destacándose y obteniendo el primer lugar en este emocionante concurso.
 <!--more-->

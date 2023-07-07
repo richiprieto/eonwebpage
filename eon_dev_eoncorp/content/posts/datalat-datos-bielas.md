@@ -11,7 +11,7 @@ tags:
 - redes sociales
 - twitter
 thumbnailImagePosition: left
-thumbnailImage: images/miniconda_tuto.png
+thumbnailImage: images/datosbielas.jpeg
 ---
 DataLat, una organización comprometida con la promoción de la apertura de datos y el desarrollo de proyectos que combinan datos y tecnología para el bien común, ha organizado el evento "Datos y Bielas" en la ciudad de Cuenca.
 <!--more-->

@@ -8,10 +8,11 @@ tags:
 - sociedad digital
 - transformación digital
 thumbnailImagePosition: left
-thumbnailImage: images/miniconda_tuto.png
+thumbnailImage: images/ciudaddigital.jpeg
 ---
 En un esfuerzo por mostrar el presente y futuro de Cuenca en su camino hacia convertirse en una ciudad digital, la Alcaldía de Cuenca, en colaboración con el Clúster 4 Ríos Tecnologías y la Cámara de Comercio de Cuenca, ha organizado el conservatorio "CUENCA HACIA UNA SOCIEDAD DIGITAL".
 <!--more-->
+![image](/images/ciudaddigital.jpeg "Charla: La Tecnología local como aporte al ecosistema de Ciudad Digital")
 
 Este evento tiene como objetivo principal destacar el proyecto que ha mejorado la calidad de vida de los habitantes de la ciudad, al impulsar una sociedad más inclusiva y sustentable mediante el uso de la tecnología.
 
