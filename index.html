@@ -1169,7 +1169,7 @@ soluciones de hardware y software.</p>-->
 			<div class="container">
 				<div class="row">
 					<div class="section-title text-center wow zoomIn" data-wow-duration="3s" data-wow-delay="0.3s" data-wow-offset="0">
-						<h2><span>Contactanos</span></h2>
+						<h2><span>Contáctanos</span></h2>
 						<div class="sec_icon"><span></span><span></span></div>
 						<p>¡Contáctanos hoy mismo y descubre cómo podemos fortalecer tu negocio con nuestras soluciones!</p>
 					</div>
@@ -1180,24 +1180,23 @@ soluciones de hardware y software.</p>-->
 						</div>
 					</div>
 					<!-- Google Map end -->
-
-
+		
 					<div class="col-md-6">
 						<div class="contact">
-							<form id="contact-form" method="POST" action="mail.php">
+							<form id="contact-form">
 								<div class="row">
 									<div class="form-group col-md-6">
-										<input type="text" name="name" class="form-control" id="first-name" placeholder="Name" required="required">
+										<input type="text" name="from_name" class="form-control" id="from_name" placeholder="Nombre" required="required">
 									</div>
 									<div class="form-group col-md-6">
-										<input type="email" name="email" class="form-control" id="email" placeholder="Email" required="required">
+										<input type="email" name="reply_to" class="form-control" id="reply_to" placeholder="Email" required="required">
 									</div>
 									<div class="form-group col-md-12">
-										<textarea rows="6" name="message" class="form-control" id="description" placeholder="Your Message" required="required"></textarea>
+										<textarea rows="6" name="message" class="form-control" id="message" placeholder="Tu Mensaje" required="required"></textarea>
 									</div>
 									<div class="col-md-12">
 										<div class="actions">
-											<button  type="submit" name="submit" id="submitButton" class="btn btn-lg btn-contact-bg" title="Submit Your Message!">Send Message</button>
+											<button type="submit" id="submitButton" class="btn btn-lg btn-contact-bg" title="Enviar tu mensaje">Enviar Mensaje</button>
 										</div>
 									</div>
 								</div>
@@ -1326,6 +1325,47 @@ soluciones de hardware y software.</p>-->
 		<!-- main JS
 		============================================ -->
         <script src="assets/js/main.js"></script>
+<!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
+<script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init('JK85Q-znN7oVskxfg');
+    })();
+
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Mostrar indicador de carga
+            document.getElementById('submitButton').disabled = true;
+            document.getElementById('submitButton').textContent = 'Enviando...';
+
+            // Parámetros del correo electrónico
+            var templateParams = {
+                from_name: this.from_name.value,
+                reply_to: this.reply_to.value,
+                message: this.message.value
+            };
+
+            // Enviar el correo electrónico
+            emailjs.send('service_b9r3nwe', 'template_q71kr0f', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+                    document.getElementById('contact-form').reset();
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Lo siento, ocurrió un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.');
+                })
+                .finally(function() {
+                    // Restaurar el botón de envío
+                    document.getElementById('submitButton').disabled = false;
+                    document.getElementById('submitButton').textContent = 'Enviar Mensaje';
+                });
+        });
+    }
+</script>
     </body>
 </html>
