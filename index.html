@@ -1330,39 +1330,42 @@ soluciones de hardware y software.</p>-->
 
 <script type="text/javascript">
     (function() {
-        // https://dashboard.emailjs.com/admin/account
         emailjs.init('JK85Q-znN7oVskxfg');
     })();
 
     window.onload = function() {
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
+        var form = document.getElementById('contact-form');
+        var submitButton = document.getElementById('submitButton');
+        var formMessage = document.querySelector('.form-message');
+
+        form.addEventListener('submit', function(event) {
             event.preventDefault();
             
             // Mostrar indicador de carga
-            document.getElementById('submitButton').disabled = true;
-            document.getElementById('submitButton').textContent = 'Enviando...';
+            submitButton.disabled = true;
+            submitButton.textContent = 'Enviando...';
+            formMessage.textContent = ''; // Limpiar cualquier mensaje anterior
 
-            // Parámetros del correo electrónico
             var templateParams = {
                 from_name: this.from_name.value,
                 reply_to: this.reply_to.value,
                 message: this.message.value
             };
 
-            // Enviar el correo electrónico
             emailjs.send('service_b9r3nwe', 'template_q71kr0f', templateParams)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
-                    alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
-                    document.getElementById('contact-form').reset();
+                    formMessage.textContent = '¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.';
+                    formMessage.style.color = 'green';
+                    form.reset();
                 }, function(error) {
                     console.log('FAILED...', error);
-                    alert('Lo siento, ocurrió un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.');
+                    formMessage.textContent = 'Lo siento, ocurrió un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.';
+                    formMessage.style.color = 'red';
                 })
                 .finally(function() {
-                    // Restaurar el botón de envío
-                    document.getElementById('submitButton').disabled = false;
-                    document.getElementById('submitButton').textContent = 'Enviar Mensaje';
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Enviar Mensaje';
                 });
         });
     }
